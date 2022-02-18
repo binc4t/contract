@@ -4,7 +4,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract PatHouse {
     struct Pat {
         string name;
-        uint age;
+        uint level;
         address owner;
     }
 
@@ -20,7 +20,12 @@ contract PatHouse {
         pats[msg.sender] = Pat(name, 0, msg.sender);
     }
 
-    function myPat() public view returns (string memory name) {
+    function levelUp() public {
+        pats[msg.sender].level++;
+    }
+
+    function myPat() public view returns (string memory name, uint level) {
         name = pats[msg.sender].name;
+        level = pats[msg.sender].level;
     }
 }
