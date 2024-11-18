@@ -1,0 +1,6 @@
+{
+  "name": "YYY GREAT TEST TOKEN",
+  "symbol": "YYY",
+  "description": "Example token from Solana Making a Token guide by YYY.",
+  "image": "https://raw.githubusercontent.com/binc4t/contract/refs/heads/main/yycoin_img.png"
+}
